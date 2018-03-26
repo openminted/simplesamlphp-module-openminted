@@ -52,9 +52,10 @@ form {
 // No use of bem, when we want to override every instance of them
 
 $header-font-weight: 300;
-$headers_margin_top: 10px;
+$headers_margin_top: 0px;
+$logo_top: 30px;
 .ssp-logo {
-    margin-top: $headers_margin_top;
+    margin-top: $logo_top;
     a {
         display: inline-block;
         padding: 10px;
@@ -316,6 +317,8 @@ $btn-distance: 12px;
 }
 
 .ssp-attrs--container {
+    //height: 34vh;
+    //overflow: auto;
     padding: 16px;
     margin-bottom: 32px;
 }
@@ -379,14 +382,12 @@ body .ssp-modal-body {
     display: block;
 }
 
+h1 {display: none}
+
 input.form-control[type="radio"], input.form-control[type="checkbox"] {
-    margin: 4px 8px;
-    width: auto;
+    border: 0 none;
     display: inline-block;
     height: auto;
-    border: 0 none;
-}
-
-.ssp-form--hint {
-    color: #989393;
+    margin: 8px 4px;
+    width: auto;
 }
